@@ -7,7 +7,7 @@ Basic usage
 ========
 
 ```c
-lxInit(lexer, buffer, Lx_ScanDigits | Lx_ScanStrings | Lx_ScanStringsCStyleEscapes);
+lxInit(&lexer, buffer, Lx_ScanDigits | Lx_ScanStrings | Lx_ScanStringsCStyleEscapes);
 
 // ...
 lxSymbol(lexer, "++", 900, T_Decrement);
